@@ -1,1 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+  </head>
+  <body>
+    <button class="theme-switch" data-theme="">
+      <i class="ri-moon-fill"></i>
+      <i class="ri-sun-line"></i>
+      
+    </button>
+    <main class="task-entry">
+      <form action="">
+        <input type="text" id="user-input" placeholder="Enter your Task" required>
+        <select name="category" id="category" required >
+          <optgroup>
+            <option value="" selected disabled hidden >Category</option>
+            <option value="Professional" >Professional</option>
+            <option value="Personal">Personal</option>
+            <option value="Academic">Academic</option>
+          </optgroup>
+        </select>
+        <button class="submit" data-mode="add" data-edit-id="">Add</button>
+      </form>
+    </main>
+    <div class="card-layout">
+    </div>
 
+   
+  </body>
+</html>
