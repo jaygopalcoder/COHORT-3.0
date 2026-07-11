@@ -63,6 +63,11 @@ form.addEventListener("submit", (event)=>{
   event.preventDefault()
   const value = inputBox.value
   const category = option.value
+
+  if(!value || !category){
+    alert("Please fill out all fields!");
+    return;
+  }
   const mode = submitBtn.getAttribute("data-mode")
   if (mode === "edit") {
     const editIdx = submitBtn.getAttribute("data-edit-id");
