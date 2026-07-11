@@ -1,1 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+  </head>
+  <body>
+    <button class="theme-switch" data-theme="">
+      <i class="ri-moon-fill"></i>
+      <i class="ri-sun-line"></i>
+      
+    </button>
+    <main class="task-entry">
+      <form action="">
+        <input type="text" id="user-input" placeholder="Enter your Task" required>
+        <select name="category" id="category" required >
+            <option value="" selected disabled hidden >Category</option>
+            <option value="Professional" >Professional</option>
+            <option value="Personal">Personal</option>
+            <option value="Academic">Academic</option>
+        </select>
+        <button class="submit" data-mode="add" data-edit-id="">Add</button>
+      </form>
+    </main>
+    <div class="card-layout">
+    </div>
 
+   <!--Browser Rendering Pipeline Section-->
+   <button class="pipeline-show-btn" data-show-pipeline="false">SHOW BROWSER PIPELINE</button>
+   <section class="pipeline" >
+    <div class="wrap">
+      <div class="html">
+        <h2>HTML</h2>
+        <i class="ri-arrow-down-long-line"></i>
+        <h2>Parsing</h2>
+        <i class="ri-arrow-down-long-line"></i>
+        <h2>Tokenization</h2>
+        <i class="ri-arrow-down-long-line"></i>
+        <h2>DOM Tree</h2>
+      </div>
+
+      <div class="css">
+        <h2>CSS</h2>
+        <i class="ri-arrow-down-long-line"></i>
+        <h2>Parsing</h2>
+        <i class="ri-arrow-down-long-line"></i>
+        <h2>CSSOM Tree</h2>
+      </div>
+    </div>
+  
+      <div class="dom-cssom">
+        <h1>DOM Tree</h2>
+        <h1>+</h1>
+        <h1>CSSOM Tree</h1>
+        <h1>=</h1>
+        <h1>Render Tree</h1>
+      </div>
+    
+   </section>
+  </body>
+</html>
