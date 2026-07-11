@@ -29,7 +29,7 @@ let userTask = userData ?? []
 function display(){
   cardContainer.innerHTML = ""
   userTask.forEach(({value,category,completed},idx)=>{
-      cardContainer.innerHTML += `<div class="user-card"  data-category = ${category} data-id = ${idx}>
+      cardContainer.innerHTML += `<div class="user-card"  data-category = '${category}' data-id = '${idx}'>
         <div class="card-task-container">
           <h2 class="card-text ${completed? "card-text-completed" : ""}">${value}
           </h2>
