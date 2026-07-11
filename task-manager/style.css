@@ -321,11 +321,13 @@ form:focus-within {
   transition: var(--transition-smooth);
   margin-bottom: 1rem;
   margin-top: 1rem;
+  max-width: 760px;
 }
 .pipeline-show-btn:hover{
   transform: translate(-1px,-1px);
   background-color: #ddffd8;
   color: #16a34a;
+  
 }
 .pipeline{
   display: flex;
@@ -335,6 +337,7 @@ form:focus-within {
   font-family: var(--font-sans);
   font-size: 0.8rem;
   color: var(--text-main);
+  max-width: 760px;
   
 }
 .pipeline .wrap{
