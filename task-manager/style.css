@@ -338,7 +338,7 @@ form:focus-within {
   font-size: 0.8rem;
   color: var(--text-main);
   max-width: 760px;
-  
+  display:none;
 }
 .pipeline .wrap{
   display: flex;
